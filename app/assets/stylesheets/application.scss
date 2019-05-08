@@ -1,0 +1,260 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ 
+$main_color: #ef7600;
+$sub_color: #efa300;
+                                  /*  ヘッダーイメージ  */
+.title {
+  font-size:3.5vw;
+  font-weight:bold;
+  color: $main_color;    
+  text-shadow:1.5px 1.5px 1.5px #333;
+  padding:10px 30px 0 0;
+}                   
+.yellow {
+  color: #efa300;    
+}
+.box {
+  padding: 0.5rem 2.0rem 0rem;
+  display:inline-block;
+  text-align:center;
+  background: red;
+  margin:0 7px 0;
+    p {
+     color: #FFF;/*文字色*/
+     font-weight: bold;
+     font-size:2.0vw;
+      }
+ }
+.head-inquiry {
+  font-size:5.0vw;
+  font-weight:bold;
+  color: $main_color;    
+  text-shadow:1.5px 1.5px 1.5px #333;
+  padding:0 0 -20px;
+}
+.inquiry-info {
+  margin-top:-15px;
+  font-size:2.9vw;
+  font-weight:bold;
+  color:$sub_color;    
+  text-shadow:1.5px 1.5px 1.5px #333;
+}
+.inquiry-time {
+  margin-top:-5px;
+  font-size:1.9vw;
+  font-weight:bold;
+  color:$sub_color;    
+  text-shadow:1.5px 1.5px 1.5px #333;
+}
+
+                                  /*  メイン画像  */
+                                            
+.back-image {
+    background-image: url('back-image.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    .box2 {
+     padding: 1rem 4.5rem 0.3rem;
+     display:inline-block;
+     background:$main_color;
+           p {
+           color: #FFF;/*文字色*/
+           font-weight: bold;
+           font-size:2.0vw;
+             }
+      }
+      .face-1 {
+          font-size:2.5vw;
+          font-weight:bold;
+          margin-top:40px;
+      }     
+      .face-2 {
+          font-size:6.0vw;
+          font-weight:bold;
+      }     
+      .face-price {
+          font-size:3.0vw;
+          font-weight:bold;
+          color:red;
+          margin:-25px 0 -25px;
+           strong{ 
+             font-size:10vw;
+             color:red;
+           }
+      }     
+      .face-conversion {
+          font-size:3.0vw;
+          font-weight:bold;
+          color:red;
+      }
+ }
+ 
+
+    .box1 {
+     padding: 1rem 4.5rem 0.3rem;
+     display:inline-block;
+     text-align:center;
+     background: red;
+           p {
+           color: #FFF;/*文字色*/
+           font-weight: bold;
+           font-size:2.0vw;
+             }
+      }
+
+/*中央寄せ*/
+.center {
+  text-align:center;
+  margin:0 auto;
+}
+
+/*イエローライン*/
+.push {
+    text-align:center;
+    font-size:4.0rem;
+    color:orange;
+    line-height:7.0rem;
+    font-weight:bold;
+    width:100%;
+    text-shadow: 2px 2px 2px #000; 
+}
+span {
+     background: linear-gradient(transparent 60%, #FFFF66 60%);      
+}
+
+
+                                            /*テーブルに関する情報*/
+/*テーブル共通*/
+table.company {
+width: 90%;
+margin: 0 auto;
+border-collapse: separate;
+border-spacing: 0px 15px;
+font-size: 12px;
+}
+
+table.company th,
+table.company td {
+padding: 10px;
+}
+
+table.company th {
+background: $main_color;
+vertical-align: middle;
+text-align: left;
+
+overflow: visible;
+position: relative;
+color: #fff;
+font-weight: normal;
+font-size: 15px;
+}
+
+table.company th:after {
+left: 100%;
+top: 50%;
+border: solid transparent;
+content: " ";
+height: 0;
+width: 0;
+position: absolute;
+pointer-events: none;
+border-color: rgba(136, 183, 213, 0);
+border-left-color: $main_color;
+border-width: 10px;
+margin-top: -10px;
+}
+/* firefox */
+@-moz-document url-prefix() {
+table.company th::after {
+float: right;
+padding: 0;
+left: 30px;
+top: 10px;
+content: " ";
+height: 0;
+width: 0;
+position: relative;
+pointer-events: none;
+border: 10px solid transparent;
+border-left: $main_color 10px solid;
+margin-top: -10px;
+}
+}
+
+.price {
+    color:red;
+    font-size:3.0rem;
+    font-weight:bold;
+ }
+ 
+ 
+                                               /*  Top Wrapper  */
+.top-wrapper {
+  padding-bottom: 70px;
+  position:relative;
+                                    /*タイトル*/
+       .heading {
+           text-align:center;
+           color: #666;
+            }
+        h2 {
+            font-size:3rem;
+            font-weight:bold;
+            }
+        p {
+            font-size:2rem;
+            }    
+        strong {
+            color: $main_color;
+            font-size:4.5rem;
+            text-decoration: underline;
+            font-weight:bold;
+        }
+        h6 {
+            line-height:2.0em;
+            font-size:1.5rem;
+            margin:0 70px;
+        }
+
+}
+
+/*hr*/
+.line {
+    height:5px;
+    background: $main_color;
+    background-image: -webkit-linear-gradient(left, #eee, $main_color, #eee);
+    background-image: -moz-linear-gradient(left, #eee, $main_color, #eee);
+    background-image: -ms-linear-gradient(left, #eee, $main_color, #eee);
+    background-image: -o-linear-gradient(left, #eee, $main_color, #eee);
+    width:90%;
+}
+
+/*number parts big font*/
+.wide {
+  font-size:3.5rem;
+  color: #FCC100;
+  text-shadow:2px 2px 2px #000;
+}
+/*bold*/
+.bold {
+  font-weight:bold;
+  font-size:3rem;
+  color:black;
+}
+

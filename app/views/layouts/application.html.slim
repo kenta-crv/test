@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    meta[charset="uft-8"]
+    meta[http-equiv="X^UA-Compatible" content="IE=edge"]
+    meta[name="viewport" content="width=device-width, initial-scale=1,0, initial-scale=1, shrink-to-fit=no"]
+    = csrf_meta_tags
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag rel="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    script[src="https://ajax.googleapis.com/js/jquery-3.3.1/slim.min.js"]
+    script[src="https://ajax.googleapis.com/js/bootstrap.bundle.min.js"]
+    script[src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"]
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = display_meta_tags(default_meta_tags)
+
+.container
+br
+  .row
+    .col-sm-5.title
+      | 記帳代行
+      strong.yellow
+        | サポート.jp
+      br
+      .box
+        p
+          | 業界最安値    
+      .box
+        p
+          | 月額7,000円     
+    .col-sm-2
+    .col-sm-5.head-inquiry
+      | 0120-000-000
+      .inquiry-info
+        | info@bookkeeping.com
+      .inquiry-time
+        | 【受付時間】10:00-17:00(土日祝火休)
+           
+body
+    = yield
