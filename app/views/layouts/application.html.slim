@@ -12,11 +12,11 @@ html
     script[src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"]
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     = display_meta_tags(default_meta_tags)
+    = favicon_link_tag('favicon.ico')
 
 .container
-br
   .row
-    .col-sm-5.title
+    .col-sm-6.title
       | 記帳代行
       strong.yellow
         | サポート.jp
@@ -28,12 +28,10 @@ br
         p
           | 月額7,000円     
     .col-sm-2
-    .col-sm-5.head-inquiry
-      | 0120-000-000
+    .col-sm-4.head-inquiry
+      | 03-6712-7024
       .inquiry-info
         | info@bookkeeping.com
-      .inquiry-time
-        | 【受付時間】10:00-17:00(土日祝火休)
-           
+
 body
     = yield
