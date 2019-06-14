@@ -13,58 +13,94 @@
  *= require_tree .
  *= require_self
  */
- 
+
 $main_color: #ef7600;
 $sub_color: #efa300;
-                                  /*  ヘッダーイメージ  */
-.title {
-  font-size:2.6vw;
-  font-weight:bold;
-  color: $main_color;    
-  text-shadow:1.5px 1.5px 1.5px #333;
-  margin-top:5px;
-}                   
-.yellow {
-  color: $sub_color;    
-}
-.box {
-  padding: 0.5vw 0.5vw 0vw;
-  display:inline-block;
+
+body {
+  width:100%;
+  margin:0 auto;
   text-align:center;
-  background: red;
-  margin:0 2px 0;
-    p {
-     color: #FFF;/*文字色*/
-     font-weight: bold;
-     font-size:1.3vw;
-      }
- }
-.head-inquiry {
-  font-size:3.5vw;
-  font-weight:bold;
-  color: $main_color;    
-  text-shadow:1.5px 1.5px 1.5px #333;
-  padding:0 0 -20px;
-}
-.inquiry-info {
-  margin-top:-10px;
-  font-size:2.0vw;
-  font-weight:bold;
-  color:$sub_color;    
-  text-shadow:1.5px 1.5px 1.5px #333;
-}
-.inquiry-time {
-  margin-top:0px;
-  font-size:1.0vw;
-  font-weight:bold;
-  color:$sub_color;    
-  text-shadow:1.5px 1.5px 1.5px #333;
 }
 
+
+                                /*ヘッダーのベース設定*/
+header {
+  width: 100%;
+  background-color:white;
+  position: fixed;
+  z-index:10;
+  margin-top:-10px;
+  .header {
+    margin-top:10px;
+  }
+  .header-left {
+     float:left;
+     margin-left:20px;
+     margin-top:10px;
+     /*  ヘッダーイメージ  */
+    .title {
+     font-size:3.3vw;
+     font-weight:bold;
+     color: $main_color;
+     text-shadow:1.5px 1.5px 1.5px #333;
+     margin-top:5px;
+     }
+    .yellow {
+     color: $sub_color;
+     }
+    .box {
+     padding: 0.5vw 0.5vw 0vw;
+     display:inline-block;
+     text-align:center;
+     background: red;
+     margin:0 5px 0;
+       p {
+        color: #FFF;/*文字色*/
+        font-weight: bold;
+        font-size:1.5vw;
+        }
+    }
+  }
+  .header-right {
+     float:right;
+     margin-right:30px;
+     margin-top:10px;
+     .head-inquiry {
+       font-size:3.5vw;
+       font-weight:bold;
+       color: $main_color;
+       text-shadow:1.5px 1.5px 1.5px #333;
+       padding:0 0 -20px;
+     }
+     .inquiry-info {
+       margin-top:-10px;
+       font-size:2.0vw;
+       font-weight:bold;
+       color:$sub_color;
+       text-shadow:1.5px 1.5px 1.5px #333;
+     }
+     .inquiry-time {
+       margin-top:0px;
+       font-size:1.8vw;
+       font-weight:bold;
+       color:$sub_color;
+       text-shadow:1.5px 1.5px 1.5px #333;
+     }
+
+  }
+}
+
+main {
+  margin-top:100px;
+}
+
+
+
                                   /*  メイン画像  */
-                                            
+
 .back-image {
-    background-image: url('back-image.jpg');
+    background-image: url('back-image.png');
     background-size: 100%;
     background-repeat: no-repeat;
     vertical-align: middle;
@@ -82,30 +118,30 @@ $sub_color: #efa300;
           font-size:2.0vw;
           font-weight:bold;
           margin-top:40px;
-      }     
+      }
       .face-2 {
           font-size:5.5vw;
           font-weight:bold;
-      }     
+      }
       .face-price {
           font-size:3.0vw;
           font-weight:bold;
           color:red;
           margin:-10px 0 -10px;
-           strong{ 
+           strong{
              font-size:8.5vw;
              color:red;
            }
-      }     
+      }
       .face-conversion {
           font-size:3.0vw;
           font-weight:bold;
           color:red;
       }
  }
- 
+
 .information {
-  margin-top:95px;
+  margin-top:55px;
 }
 
     .box1 {
@@ -125,7 +161,7 @@ $sub_color: #efa300;
   text-align:center;
   margin:0 auto;
 }
-      
+
 /*イエローライン*/
 .push {
     text-align:center;
@@ -134,10 +170,10 @@ $sub_color: #efa300;
     line-height:7.0rem;
     font-weight:bold;
     width:100%;
-    text-shadow: 2px 2px 2px #000; 
+    text-shadow: 2px 2px 2px #000;
 }
 span {
-     background: linear-gradient(transparent 60%, #FFFF66 60%);      
+     background: linear-gradient(transparent 60%, #FFFF66 60%);
 }
 
                                             /*テーブルに関する情報*/
@@ -148,7 +184,7 @@ table.company {
    border-collapse: separate;
    border-spacing: 0px 15px;
    font-size: 12px;
-   
+
    th, td { padding: 10px; }
 
    th {
@@ -160,7 +196,7 @@ table.company {
       color: #fff;
       font-weight: normal;
       font-size: 15px;
-      
+
       :after {
          left: 100%;
          top: 50%;
@@ -180,7 +216,7 @@ table.company {
    td {
       background: #F2F4C7;
 
-      }      
+      }
 }
 
 /* firefox */
@@ -202,7 +238,7 @@ table.company {
 }
   input {
     width:90%;
-  } 
+  }
   textarea {
     width:90%;
     line-height: 1.5em;
@@ -214,8 +250,8 @@ table.company {
     font-size:3.0vw;
     font-weight:bold;
  }
- 
- 
+
+
                                                /*  Top Wrapper  */
 .top-wrapper {
   padding-bottom: 70px;
@@ -231,7 +267,7 @@ table.company {
             }
         p {
             font-size:2rem;
-            }    
+            }
         strong {
             color: $main_color;
             font-size:4.5rem;
@@ -262,7 +298,7 @@ table.company {
 		width:95%;
 		font-size:21px;
 		font-weight:bold;
-	    }	
+	    }
 	p {
 		line-height:2.5;
 		font-size:18px;
@@ -273,7 +309,7 @@ table.company {
 	bold {
 		font-weight:bold;
 	    }
-	
+
 	span   {
         color: $main_color;
         font-size:45px;
@@ -305,3 +341,118 @@ table.company {
   color:black;
 }
 
+
+
+#dropmenu{
+ list-style-type: none;
+ width: 100%;
+ height: 40px;
+ margin: 0 auto;
+ background: $main_color;
+}
+#dropmenu li{
+ position: relative;
+ width: 19%;
+ float: left;
+ margin: 0;
+ padding: 0;
+ text-align: center;
+}
+#dropmenu li a{
+ display: block;
+ margin: 0;
+ padding: 10px 0 15px;
+ color: #fff;
+ font-size: 100%;
+ text-shadow: 1px 1px 1px #999;
+ line-height: 1;
+ text-decoration: none;
+}
+#dropmenu li ul{
+ list-style: none;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ margin: 0;
+ padding: 0;
+ border-radius: 0 0 3px 3px;
+}
+#dropmenu li:last-child ul{
+ left: -100%;
+ width: 100%
+}
+#dropmenu li ul li{
+ overflow: hidden;
+ width: 300%;
+ height: 0;
+ color: #fff;
+ -moz-transition: .2s;
+ -webkit-transition: .2s;
+ -o-transition: .2s;
+ -ms-transition: .2s;
+ transition: .2s;
+}
+#dropmenu li ul li a{
+ padding: 13px 15px;
+ background: $main_color;
+ text-align: left;
+ font-size: 12px;
+ font-weight: normal;
+}
+#dropmenu li:hover > a{
+background-color:$sub_color;
+ color: #fff;
+}
+
+#dropmenu li:hover ul li{
+ overflow: visible;
+ height: 38px;
+ border-top: 1px solid #fff;
+ border-bottom: 1px solid #fff;
+}
+#dropmenu li:hover ul li:first-child{
+ border-top: 0;
+}
+#dropmenu li:hover ul li:last-child{
+ border-bottom: 0;
+}
+#dropmenu li:hover ul li:last-child a{
+ border-radius: 0 0 3px 3px;
+}
+
+
+.headline {
+  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: #f4f4f4;/*背景色*/
+  border-left: solid 5px $main_color;/*左線*/
+  border-bottom: solid 3px #d7d7d7;/*下線*/
+  text-align:left;
+  padding-left:30px;
+  margin:30px auto;
+	width:95%;
+	font-size:21px;
+	font-weight:bold;
+  }
+
+.both-set {
+  margin:0 30px;
+  font-size:12px;
+  color:#666;
+}
+
+.business-wrapper {
+  margin:15px;
+  .post-space {
+
+  }
+  .post-title {
+    font-size:21px;
+    color:#333;
+    font-weight:bold;
+    text-align:center;
+  }
+  .post-description {
+    font-size:12px;
+  }
+}

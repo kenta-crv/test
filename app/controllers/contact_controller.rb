@@ -8,9 +8,9 @@ class ContactController < ApplicationController
     @contact = Contact.new(contact_params)
     if @contact.valid?
       render :action =>  'confirm'
-    else 
+    else
       render :action => 'index'
-    end 
+    end
   end
 
   def thanks
@@ -18,7 +18,7 @@ class ContactController < ApplicationController
     ContactMailer.received_email(@contact).deliver_now
     render :action => 'thanks'
   end
-  
+
   private
   def contact_params
     params.require(:contact).permit(
@@ -27,7 +27,7 @@ class ContactController < ApplicationController
     :tel, #電話番号
     :address, #住所
     :email, #メールアドレス
-    :message   
+    :message
     )
   end
 end
