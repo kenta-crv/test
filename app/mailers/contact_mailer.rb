@@ -1,7 +1,7 @@
 class ContactMailer < ActionMailer::Base
-  default from: "smart@smart-document.jp"
-  default to: "smart@smart-document.jp"
-  
+  default from: "info@k-speas.jp"
+  default to: "info@k-speas.jp"
+
   def received_email(contact)
     @contact = contact
     mail(subject: 'webサイトよりメッセージが届きました') do |format|
