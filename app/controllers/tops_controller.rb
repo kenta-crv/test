@@ -16,4 +16,7 @@ class TopsController < ApplicationController
 
   def company
   end
+
+  def privacy
+  end
 end
