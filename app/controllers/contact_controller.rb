@@ -15,8 +15,7 @@ class ContactController < ApplicationController
 
   def thanks
     @contact = Contact.new(contact_params)
-    ContactMailer.received_email(@contact).deliver_now
-    render :action => 'thanks'
+    ContactMailer.received_email(@contact).deliver
   end
 
   private
