@@ -71,3 +71,11 @@ gem 'breadcrumbs_on_rails'
 gem 'annotate'
 #jQuiry
 gem "jquery-rails"
+#ページネート
+gem 'kaminari'
+gem 'annotate'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
+
+#画像アップロード
+gem 'carrierwave'

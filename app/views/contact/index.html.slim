@@ -5,8 +5,7 @@
       - @contact.errors.each do |attr, msg|
         li= msg
 
-  br
-  =image_tag 'each_main.jpg', width: '100%'
+  =image_tag 'contact.png', width: '100%'
 
   .tops-wrapper
     h1.headline-first
@@ -15,8 +14,8 @@
     br
     table.company
       colgroup
-        col width="40%" 
-        col width="60%" 
+        col width="40%"
+        col width="60%"
       tr
         th.arrow_box
           | 会社名
@@ -53,19 +52,5 @@
           strong.label.label-blue 必須
         td= f.text_area :message
       tr
-        td colspan="2" 
+        td colspan="2"
           = f.submit "確認"
-
-/# inquiry image
-.row
-  .col-sm-12.center
-    =link_to "#" do
-      =image_tag 'question1.png', width: '70%', class: 'center'
-
-
-br
-br
-br
-br
-
-

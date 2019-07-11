@@ -19,4 +19,10 @@ class TopsController < ApplicationController
 
   def privacy
   end
+
+  def agent
+  end
+
+  def review
+  end
 end

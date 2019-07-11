@@ -1,12 +1,22 @@
 Rails.application.routes.draw do
-  root to: 'tops#lp' #トップランディングページ
 
-  get '/lp' => 'tops#lp'
-  get '/business' => 'tops#business'
-  get '/price' => 'tops#price'
-  get '/company' => 'tops#company'
-  get '/president' => 'tops#president'
-  get '/privacy' => 'tops#privacy'
+  root to: 'app#index' #トップランディングページ
+  get 'app/business' => 'app#business'
+  get 'app/price' => 'app#price'
+  get 'app/company' => 'app#company'
+  get 'app/privacy' => 'app#privacy'
+  get 'app/agent' => 'app#agent'
+  get 'app/review' => 'app#review'
+
+  resources :posts
+
+  get 'it' => 'it#index'
+  get 'it/business' => 'it#business'
+  get 'it/price' => 'it#price'
+  get 'it/company' => 'it#company'
+  get 'it/privacy' => 'it#privacy'
+  get 'it/agent' => 'it#agent'
+  get 'it/review' => 'it#review'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get '/contact' => 'contact#index'

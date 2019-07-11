@@ -14,8 +14,8 @@
  *= require_self
  */
 
-$main_color: #ef7600;
-$sub_color: #efa300;
+ $main_color: #004D7F;
+ $sub_color: #1481c8;
 
 body {
   width:100%;
@@ -31,68 +31,33 @@ header {
   position: fixed;
   z-index:10;
   margin-top:-10px;
-  .header {
-    margin-top:10px;
-  }
-  .header-left {
-     float:left;
-     margin-left:20px;
-     margin-top:10px;
-     /*  ヘッダーイメージ  */
-    .title {
-     font-size:3.3vw;
-     font-weight:bold;
-     color: $main_color;
-     text-shadow:1.5px 1.5px 1.5px #333;
-     margin-top:5px;
+     .left {
+       float:left;
      }
-    .yellow {
-     color: $sub_color;
+     .right {
+       float:right;
      }
-    .box {
-     padding: 0.5vw 0.5vw 0vw;
-     display:inline-block;
-     text-align:center;
-     background: red;
-     margin:0 5px 0;
-       p {
-        color: #FFF;/*文字色*/
-        font-weight: bold;
-        font-size:1.5vw;
-        }
-    }
-  }
-  .header-right {
-     float:right;
-     margin-right:30px;
-     margin-top:10px;
+
      .head-inquiry {
-       font-size:3.5vw;
+       font-size:3.0vw;
        font-weight:bold;
        color: $main_color;
        text-shadow:1.5px 1.5px 1.5px #333;
-       padding:0 0 -20px;
+       padding:0 0 -10px;
      }
      .inquiry-info {
-       margin-top:-10px;
-       font-size:2.0vw;
-       font-weight:bold;
-       color:$sub_color;
-       text-shadow:1.5px 1.5px 1.5px #333;
-     }
-     .inquiry-time {
-       margin-top:0px;
-       font-size:1.8vw;
+       margin-top:-15px;
+       font-size:2.5vw;
        font-weight:bold;
        color:$sub_color;
        text-shadow:1.5px 1.5px 1.5px #333;
      }
 
-  }
+
 }
 
 main {
-  margin-top:100px;
+  margin-top:80px;
 }
 
 
@@ -100,10 +65,12 @@ main {
                                   /*  メイン画像  */
 
 .back-image {
-    background-image: url('back-image.png');
+    background-image: url('base.png');
     background-size: 100%;
     background-repeat: no-repeat;
     vertical-align: middle;
+    margin:-20px;
+    padding-bottom:50px;
     .box2 {
      padding: 1vw 4.5vw 0.3vw;
      display:inline-block;
@@ -165,14 +132,15 @@ main {
 /*イエローライン*/
 .push {
     text-align:center;
-    font-size:4.0rem;
+    font-size:4.0vw;
     color:orange;
-    line-height:7.0rem;
+    line-height:7.0vw;
     font-weight:bold;
     width:100%;
     text-shadow: 2px 2px 2px #000;
+
 }
-span {
+.under {
      background: linear-gradient(transparent 60%, #FFFF66 60%);
 }
 
@@ -214,7 +182,7 @@ table.company {
       }
 
    td {
-      background: #F2F4C7;
+      background: #f4f4f4;
 
       }
 }
@@ -247,7 +215,7 @@ table.company {
 
 .price {
     color:red;
-    font-size:3.0vw;
+    font-size:2.0vw;
     font-weight:bold;
  }
 
@@ -352,7 +320,7 @@ table.company {
 }
 #dropmenu li{
  position: relative;
- width: 19%;
+ width: 16%;
  float: left;
  margin: 0;
  padding: 0;
@@ -364,7 +332,7 @@ table.company {
  padding: 10px 0 15px;
  color: #fff;
  font-size: 100%;
- text-shadow: 1px 1px 1px #999;
+ text-shadow: 1px 1px 1px #000;
  line-height: 1;
  text-decoration: none;
 }
@@ -448,11 +416,91 @@ background-color:$sub_color;
   }
   .post-title {
     font-size:21px;
-    color:#333;
+    color:$main_color;
     font-weight:bold;
-    text-align:center;
+    text-align:left;
+    margin-left:20px;
   }
   .post-description {
-    font-size:12px;
+    font-size:14px;
+    text-align:left;
+    margin-left:20px;
   }
+}
+
+.top-wrapper {
+  margin:0 40px -50px;
+  text-align:left;
+   .float-image{
+     float:left;
+     margin:0 20px 20px 0px;
+   }
+   p{
+     font-size:16px;
+     line-height:2.0;
+   }
+}
+
+
+
+
+/* 黒板風　タイトル　3 */
+.kokuban-t3 {
+ position: relative;
+ margin: 2em auto;
+ padding: 3.2em 1em 1em;
+ width: 90%; /* ボックス幅 */
+ background-color: #044072; /* ボックス背景色 */
+ color: #fff; /* 文章色 */
+ border: 10px solid #b2771f; /* 枠線 */
+ border-radius: 3px; /* 角の丸み */
+ box-shadow: 0 0 5px #333, 0 0 5px #555 inset;
+}
+.kokuban-t3::before,
+.kokuban-t3::after {
+ position: absolute;
+ content: '';
+ bottom: 0;
+}
+.kokuban-t3::before {
+ right: 10px;
+ border: solid 3px #ffff6b; /*チョーク（黄色）*/
+ width: 20px;
+ border-radius: 3px 2px 0 2px;
+}
+.kokuban-t3::after {
+ right: 40px;
+ border: solid 3px #fff; /*チョーク（白）*/
+ width: 15px;
+ border-radius: 8px 5px 2px 5px;
+}
+.title-t3 {
+ position: absolute;
+ left: 1em;
+ top: .5em;
+ font-weight: bold;
+ font-size: 1.1em;
+ color: #ffff6b; /* タイトル色 */
+}
+
+
+
+
+/* ボックス */
+.mybox{
+ border: 3px solid $main_color;	/* 線の太さ・種類・色 */
+ border-radius: 8px;
+ padding: 45px 10px 10px 10px;	/* 内側の余白 上・右・左・下 */
+ position: relative;
+.title{
+ background-color: $main_color;	/* タイトル部分背景色 */
+ border-radius: 5px 5px 0px 0px;
+ color: #fff;	/* タイトル部分文字色 */
+ height: 25px;	/* タイトル部分高さ */
+ padding: 5px 10px;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+}
 }
