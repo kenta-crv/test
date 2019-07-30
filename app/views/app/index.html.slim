@@ -4,10 +4,10 @@
 
 /#トップ
 br
-.back-image
+.back-image.back-image-app
   .row
-    .col-sm-1
-    .col-sm-7.face-1
+    .col-xs-1
+    .col-xs-7.face-1
         |  低価格で中小企業へのアポイントを取得するなら
         br
           .face-2
@@ -18,7 +18,7 @@ br
                 strong
                    | 10,000
                 | 円~
-              .box2
+              .box2.visible-md.visible-lg
                 p
                   | 期間限定!!アポ５件からお受けいたします。
               .face-price
@@ -28,7 +28,7 @@ br
                   |
                   |
 
-    .col-sm-4.visible-md.visible-lg
+    .col-xs-4.visible-md.visible-lg
         .box1
           p
             | 毎月5名様限定受付
@@ -38,7 +38,7 @@ br
 br
 .row
   .col-sm-12.center
-    =link_to "/contact" do
+    =link_to "/contact", :target=>["_blank"]   do
       =image_tag 'question.gif', width: '50%', class: 'center'
 
   br
@@ -110,7 +110,7 @@ br
 /# inquiry image
 .row
   .col-sm-12.center
-    =link_to "/contact" do
+    =link_to "/contact", :target=>["_blank"]   do
       =image_tag 'question.gif', width: '50%', class: 'center'
 
 br
@@ -177,7 +177,7 @@ br
 /# inquiry image
 .row
   .col-sm-12.center
-    =link_to "/contact" do
+    =link_to "/contact", :target=>["_blank"]   do
       =image_tag 'question.gif', width: '50%', class: 'center'
 
 br
@@ -238,7 +238,7 @@ br
 /# inquiry image
 .row
   .col-sm-12.center
-    =link_to "/contact" do
+    =link_to "/contact", :target=>["_blank"]   do
       =image_tag 'question.gif', width: '50%', class: 'center'
 
 br
@@ -321,7 +321,7 @@ br
 /# inquiry image
 .row
   .col-sm-12.center
-    =link_to "/contact" do
+    =link_to "/contact", :target=>["_blank"]   do
       =image_tag 'question.gif', width: '50%', class: 'center'
 
 
@@ -409,7 +409,7 @@ br
 /# inquiry image
 .row
   .col-sm-12.center
-    =link_to "/contact" do
+    =link_to "/contact", :target=>["_blank"]   do
       =image_tag 'question.gif', width: '50%', class: 'center'
 
 br
@@ -438,6 +438,7 @@ br
    .kokuban-t3
     span.title-t3> ❷トークスクリプトやリストの作成
     | ヒアリングの情報を元に市場調査を行なった後、実際に弊社でトークスクリプトの作成を行います。リストについてもご依頼頂く場合、リスト選定についてもこの段階で行います。
+.row
  .col-md-6
    .kokuban-t3
     span.title-t3> ❸テレアポ獲得予測件数に基づき費用のご入金（初回のお客様のみ）
@@ -468,7 +469,7 @@ br
 /# inquiry image
 .row
   .col-sm-12.center
-    =link_to "/contact" do
+    =link_to "/contact", :target=>["_blank"]  do
       =image_tag 'question.gif', width: '50%', class: 'center'
 
 br

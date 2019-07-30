@@ -63,14 +63,25 @@ main {
 
 
                                   /*  メイン画像  */
+.back-image-app {
+  background-image: url('base.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  padding-bottom:50px;
+  margin-top:-17px;
+}
+.back-image-it {
+  background-image: url('it.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-top:-17px;
+  padding-bottom:50px;
+}
 
 .back-image {
-    background-image: url('base.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    margin:-20px;
-    padding-bottom:50px;
+
     .box2 {
      padding: 1vw 4.5vw 0.3vw;
      display:inline-block;
