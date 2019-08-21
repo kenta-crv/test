@@ -101,6 +101,11 @@ main {
           font-size:5.5vw;
           font-weight:bold;
       }
+      .face-3 {
+          font-size:5.5vw;
+          font-weight:bold;
+          color:red;
+      }
       .face-price {
           font-size:3.0vw;
           font-weight:bold;
@@ -420,24 +425,6 @@ background-color:$sub_color;
   color:#666;
 }
 
-.business-wrapper {
-  margin:15px;
-  .post-space {
-
-  }
-  .post-title {
-    font-size:21px;
-    color:$main_color;
-    font-weight:bold;
-    text-align:left;
-    margin-left:20px;
-  }
-  .post-description {
-    font-size:14px;
-    text-align:left;
-    margin-left:20px;
-  }
-}
 
 .top-wrapper {
   margin:0 40px -50px;

@@ -3,8 +3,28 @@ html
   head
       = render template: 'layouts/_head.html.slim'
   header
-    .container-fuild
-      = render template: 'layouts/_header.html.slim'
+    .row
+      .col-xs-3
+          =image_tag "logo1.png", height: "85vw", class:"left"
+      .col-xs-6
+      .col-xs-3
+          =image_tag "tel.gif", height: "85vw", class:"right"
+
+    .row.header
+      .col-xs-12
+        ul#dropmenu
+         li
+           = link_to  'トップ', '#' , class: "col-md"
+         li
+           = link_to  '売上UPの匠とは？', '#' , :class=>"col-md"
+         li
+           = link_to  '店舗集客', '#' , :class=>"col-md"
+         li
+           = link_to  'アウトバウンド営業', '#' , :class=>"col-md"
+         li
+           = link_to  'WEB集客', '#' , :class=>"col-md"
+         li
+          = link_to  '問い合わせ', '#' , :class=>"col-md"
   body
     p.notice
       = notice
@@ -14,5 +34,3 @@ html
       .bread
         = render_breadcrumbs separator: ' > '
       = yield
-  footer
-     = render template: 'layouts/_footer.html.slim'
