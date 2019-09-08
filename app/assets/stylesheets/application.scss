@@ -37,27 +37,10 @@ header {
      .right {
        float:right;
      }
-
-     .head-inquiry {
-       font-size:3.0vw;
-       font-weight:bold;
-       color: $main_color;
-       text-shadow:1.5px 1.5px 1.5px #333;
-       padding:0 0 -10px;
-     }
-     .inquiry-info {
-       margin-top:-15px;
-       font-size:2.5vw;
-       font-weight:bold;
-       color:$sub_color;
-       text-shadow:1.5px 1.5px 1.5px #333;
-     }
-
-
 }
 
 main {
-  margin-top:80px;
+  margin-top:90px;
 }
 
 
@@ -69,7 +52,8 @@ main {
   background-repeat: no-repeat;
   vertical-align: middle;
   padding-bottom:50px;
-  margin-top:-17px;
+  margin-top:-10px;
+  margin-right:-15px;
 }
 .back-image-it {
   background-image: url('it.png');
@@ -167,7 +151,7 @@ table.company {
    margin: 0 auto;
    border-collapse: separate;
    border-spacing: 0px 15px;
-   font-size: 12px;
+   font-size: 2.0vw;
 
    th, td { padding: 10px; }
 
@@ -179,7 +163,7 @@ table.company {
       position: relative;
       color: #fff;
       font-weight: normal;
-      font-size: 15px;
+      font-size: 2.2vw;
 
       :after {
          left: 100%;
@@ -231,7 +215,7 @@ table.company {
 
 .price {
     color:red;
-    font-size:2.5rem;
+    font-size:2.5vw;
     font-weight:bold;
  }
 
@@ -246,21 +230,21 @@ table.company {
            color: #666;
             }
         h2 {
-            font-size:3rem;
+            font-size:3vw;
             font-weight:bold;
             }
         p {
-            font-size:2rem;
+            font-size:2vw;
             }
         strong {
             color: $main_color;
-            font-size:4.5rem;
+            font-size:4.0rem;
             text-decoration: underline;
             font-weight:bold;
         }
         h6 {
             line-height:2.0em;
-            font-size:1.5rem;
+            font-size:1.5vw;
             margin:0 70px;
         }
 }
@@ -490,6 +474,7 @@ background-color:$sub_color;
  border-radius: 8px;
  padding: 45px 10px 10px 10px;	/* 内側の余白 上・右・左・下 */
  position: relative;
+ margin-bottom:40px;
 .title{
  background-color: $main_color;	/* タイトル部分背景色 */
  border-radius: 5px 5px 0px 0px;
