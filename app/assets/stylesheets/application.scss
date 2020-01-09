@@ -52,7 +52,7 @@ main {
   background-repeat: no-repeat;
   vertical-align: middle;
   padding-bottom:50px;
-  margin-top:-10px;
+  margin-top:-22px;
   margin-right:-15px;
 }
 .back-image-it {
@@ -65,11 +65,10 @@ main {
 }
 
 .back-image {
-
     .box2 {
      padding: 1vw 4.5vw 0.3vw;
      display:inline-block;
-     background:$main_color;
+     background:red;
            p {
            color: #FFF;/*文字色*/
            font-weight: bold;
@@ -79,7 +78,7 @@ main {
       .face-1 {
           font-size:2.0vw;
           font-weight:bold;
-          margin-top:40px;
+          margin-top:30px;
       }
       .face-2 {
           font-size:5.5vw;
@@ -94,7 +93,7 @@ main {
           font-size:3.0vw;
           font-weight:bold;
           color:red;
-          margin:-10px 0 -10px;
+          margin:-10px 0 -25px;
            strong{
              font-size:8.5vw;
              color:red;
@@ -108,7 +107,7 @@ main {
  }
 
 .information {
-  margin-top:55px;
+  margin-top:45px;
 }
 
     .box1 {
@@ -151,7 +150,7 @@ table.company {
    margin: 0 auto;
    border-collapse: separate;
    border-spacing: 0px 15px;
-   font-size: 2.0vw;
+   font-size: 1.5vw;
 
    th, td { padding: 10px; }
 
@@ -163,7 +162,7 @@ table.company {
       position: relative;
       color: #fff;
       font-weight: normal;
-      font-size: 2.2vw;
+      font-size: 1.7vw;
 
       :after {
          left: 100%;
@@ -186,6 +185,7 @@ table.company {
 
       }
 }
+
 
 /* firefox */
 @-moz-document url-prefix() {
@@ -486,4 +486,20 @@ background-color:$sub_color;
  left: 0;
  right: 0;
 }
+}
+
+
+
+.red {
+  color: red;
+}
+
+.font-height {
+  line-height:3.0vw;
+  margin:0 30px;
+}
+
+.font-height-2 {
+  font-size:0.5vw;
+  margin:0 30px;
 }

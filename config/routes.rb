@@ -1,12 +1,15 @@
 Rails.application.routes.draw do
+  devise_for :admins
+  #devise_for :admins
 
   root to: 'app#index' #トップランディングページ
+  get 'lp' => 'app#lp'
   get 'app/business' => 'app#business'
   get 'app/price' => 'app#price'
   get 'app/company' => 'app#company'
-  get 'app/privacy' => 'app#privacy'
   get 'app/agent' => 'app#agent'
   get 'app/review' => 'app#review'
+  get 'app/recruit' => 'app#recruit'
 
   resources :posts
 
@@ -22,4 +25,8 @@ Rails.application.routes.draw do
   get '/contact' => 'contact#index'
   post '/confirm' => 'contact#confirm'
   post '/thanks' => 'contact#thanks'
+
+  get 'recruits' => 'recruits#index'
+  post 'recruits/confirm' => 'recruits#confirm'
+  post 'recruits/thanks' => 'recruits#thanks'
 end

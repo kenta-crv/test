@@ -1,6 +1,5 @@
 class Contact
   include ActiveModel::Model
-
   attr_accessor :company, :name, :tel, :email, :address, :subject ,:message
 
   validates :company, {presence: true}

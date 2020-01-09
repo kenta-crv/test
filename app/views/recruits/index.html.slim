@@ -1,0 +1,63 @@
+= form_for(@recruit, url: { action: :confirm }) do |f|
+  - if @recruit.errors.any?
+    strong 入力内容にエラーがあります
+    ul
+      - @recruit.errors.each do |attr, msg|
+        li= msg
+
+  =image_tag 'contact.gif', width: '100%'
+
+  .tops-wrapper
+    h1.headline-first
+      span> 求人応募
+      | フォーム
+    br
+    table.company
+      colgroup
+        col width="40%"
+        col width="60%"
+      tr
+        th.arrow_box
+          | 氏名
+          strong.label.label-blue 必須
+        td.short
+         = f.text_field :name
+
+      tr
+        th.arrow_box
+          | 電話番号
+          strong.label.label-blue 必須
+        td= f.text_field :mobile
+      tr
+        th.arrow_box
+          | メールアドレス
+          strong.label.label-blue 必須
+        td= f.email_field :email
+      tr
+        th.arrow_box
+          | 年齢
+          strong.label.label-blue 必須
+        td= f.text_field :age
+      tr
+        th.arrow_box
+          | 最寄駅
+          strong.label.label-blue 必須
+        td= f.text_field :station
+          | 駅
+      tr
+        th.arrow_box
+          | 形態
+          strong.label.label-blue 必須
+        td= f.select(:choice, [ \
+            ["選択する","選択する"],      \
+            ["正社員","正社員"],      \
+            ["アルバイト","アルバイト"],      \
+            ])
+      tr
+        th.arrow_box
+          | 本文
+          strong.label.label-blue
+        td= f.text_area :remarks
+      tr
+        td colspan="2"
+          = f.submit "確認"

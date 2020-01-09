@@ -1,0 +1,66 @@
+br
+  =image_tag 'contact.gif', width: '100%'
+
+
+= form_for(@recruit, url: { action: :thanks }) do |f|
+  .tops-wrapper
+    h2.heading
+      span> お問い合わせ内容確認
+      | フォーム
+    table.company
+      colgroup
+        col width="40%" /
+        col width="60%" /
+      tr
+        th.arrow_box
+          | 氏名
+          strong.label.label-blue 必須
+          br/
+        td
+          = f.hidden_field :name
+          = @recruit.name
+      tr
+        th.arrow_box
+          | 電話番号
+          strong.label.label-blue 必須
+        td
+          = f.hidden_field :mobile
+          = @recruit.mobile
+      tr
+        th.arrow_box
+          | メールアドレス
+          strong.label.label-blue 必須
+        td
+          = f.hidden_field :email
+          = @recruit.email
+      tr
+        th.arrow_box
+          | 年齢
+          strong.label.label-blue 必須
+        td
+          = f.hidden_field :age
+          = @recruit.age
+      tr
+        th.arrow_box
+          | 最寄駅
+          strong.label.label-blue 必須
+        td
+          = f.hidden_field :station
+          = @recruit.station
+      tr
+        th.arrow_box
+          | 形態
+          strong.label.label-blue 必須
+        td
+          = f.hidden_field :choice
+          = @recruit.choice
+      tr
+        th.arrow_box
+          | 本文
+          strong.label.label-blue
+        td
+          = f.hidden_field :remarks
+          = @recruit.remarks
+      tr
+        td colspan="2"
+          = f.submit "確認"
