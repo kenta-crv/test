@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   get 'app/agent' => 'app#agent'
   get 'app/review' => 'app#review'
   get 'app/recruit' => 'app#recruit'
+    get 'app/parttime' => 'app#parttime'
+    get 'app/regular' => 'app#regular'
 
   resources :posts
 

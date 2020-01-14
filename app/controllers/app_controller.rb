@@ -26,4 +26,10 @@ class AppController < ApplicationController
 
   def recruit
   end
+
+  def parttime
+  end
+
+  def regular
+  end
 end
