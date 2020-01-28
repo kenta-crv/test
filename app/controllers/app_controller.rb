@@ -32,4 +32,7 @@ class AppController < ApplicationController
 
   def regular
   end
+
+  def foreign
+  end
 end

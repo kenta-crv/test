@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get 'app/recruit' => 'app#recruit'
     get 'app/parttime' => 'app#parttime'
     get 'app/regular' => 'app#regular'
+  get 'foreign' => 'app#foreign'
 
   resources :posts
 
