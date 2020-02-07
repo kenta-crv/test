@@ -6,37 +6,22 @@
 br
 .back-image.back-image-app
   .row
-    .col-xs-1
-    .col-xs-7.face-1
-        |  ITプログラミング × 独自マーケティング分析
+    .col-xs-12
+      br
+      .face-1
+        |  ITエンジニア・HTMLコーダーの
         br
-        |  実績と信頼のテレマーケティングなら
+        |  フリーランスへの単発依頼なら
         br
-          .face-2
-            |  『アポ匠』
-            br
-              .face-price
-                |  １アポ
-                strong
-                   | 15,000
-                | 円~
-              .box2
-                p
-                  | 平均アポ獲得率５％
-              .face-price
-                |
+      .face-3
+        | 『エンジランス』
+      .face-price
+          | 最短１時間〜
+      br
+      .box2
+        p
+          | 満足度96.5%
 
-                strong
-                  |
-                  |
-                  |
-                  |
-
-
-    .col-xs-4.visible-md.visible-lg
-        .box1
-          p
-            | 毎月5名様限定受付
 
 br
 .row
@@ -48,72 +33,37 @@ br
 hr.line
 br
 
-  /# push font
-  h2.push
-     span
-       | まずはご覧ください！アポ匠の
-       br
-       | 圧倒的な代行実績があなたの会社を変えます！
 
-
-/# Comparison
-table.company.center
-  col[width="25%"]
-  col[width="25%"]
-  col[width="25%"]
-  col[width="25%"]
-  tbody
-    tr
-      th.arrow_box
-        | アポ代行実績
-      th.arrow_box
-        |
-      th.arrow_box.price
-        |
-      th.arrow_box.price
-        |
-    tr
-      th.arrow_box
-        | 人材紹介・派遣
-      td.price
-        | アポ率5~10%続々
-      th.arrow_box
-        | 経営コンサル業
-      td.price
-        | 平均アポ率10%
-    tr
-      th.arrow_box
-        | 国の制度活用事業
-      td.price
-        | 累計アポ数1000件超
-      th.arrow_box
-        | 引越会社コンサル
-      td.price
-        | 月間アポ数1000件
-
+/# Trouble
+.top-wrapper
+  h2.heading
+    strong
+      | エンジランスって
+    | どんなサービス？
+  br
+  br
+  h6.heading
+    | エンジランスはITプログラマーやHTMLコーダーのフリーランスを企業様とマッチングする仲介マッチング会社です。人材不足と言われる世の中、ITスキルのある人材は特に人材不足に苦しんでいます。そんな人材を単発でご紹介させて頂くサービスです。
+  br
+  br
+  .row.center
+    .col-sm-1
+    .col-sm-3
+     = image_tag "istockphoto.jpg", width:"100%"
+     p 企業
+    .col-sm-4
+     = image_tag "match.png", width:"80%"
+    .col-sm-3
+     = image_tag "693.jpg", width:"100%"
+     p フリーランス
+    .col-sm-1
+    br
+    br
 
 br
 hr.line
 br
 
-/# push font
-h2.push
-   span
-     | 独自分析で角度の高いテレマーケティング代行！
-     br
-     | 他社で同じような成果は絶対に出せません！
-
-br
-
-/# inquiry image
-.row
-  .col-sm-12.center
-    =link_to "/contact", :target=>["_blank"]   do
-      =image_tag 'question.gif', width: '70%', class: 'center'
-
-br
-hr.line
-br
 
 /# Trouble
 .top-wrapper
@@ -124,35 +74,42 @@ br
   br
   br
   h6.heading
-    | いくら商品は良くても対象とする顧客がいなければ商売は絶対に成り立ちません。テレアポはその買い手を効率よく探すツールとして、過去から注目を集めているアポイントメント手法です。
+    | 時代の最先端を行くIT業界。そんな業界だからこそ、まだまだ人材は不足しています。慢性的な悩みから季節需要迄、様々なお悩みがあるのではないでしょうか？
   .row
     .col-sm-1
     br
     br
     .col-sm-4.center.visible-md
+      br
       = image_tag "distress.jpg"
     br
     .col-sm-7
        p
          strong
            | ☑︎
-         |  新規営業にリソース出来る人材がおらず売上が上がらない
+         |  エンジニアが早急に必要だが見つからない
          br
          b.h4
          strong
            | ☑︎
-         |  テレアポを行なっているが従業員がすぐ辞めてしまい余分コストだけがかさむ
+         |  慢性的に人材不足に悩んでいる
          br
          b.h4
          strong
            | ☑︎
-         |  知り合いに紹介を依頼するがターゲットとなる相手がいない
+         |  HTMLやCSSが出来るコーダーに仕事を依頼したい
          br
          b.h4
          strong
            | ☑︎
-         |  これから業務を拡大していきたくて代行会社を検討している
+         |  すぐには必要ないが、万一の保険のために人材を確保しておきたい
+         br
          b.h4
+         strong
+           | ☑︎
+         |  急に人材が退職して困っている
+         b.h4
+
 
 br
 hr.line
@@ -161,9 +118,9 @@ br
 /# push font
 h2.push
    span
-     | お任せ下さい！アポ匠なら
+     | お任せ下さい！あなたのニーズに合わせて
      br
-     | 徹底したマーケティング分析力で結果を出します！
+     | HTMLコーダー・ITエンジニアをご紹介致します。
 
 br
 
@@ -177,77 +134,10 @@ br
 hr.line
 br
 
-/# Trouble
-.top-wrapper
-  h2.heading
-    strong
-      | 事前にご理解下さい
-  br
-  br
-  h6.heading
-    | アポ匠ではお客様と良好な関係を結ぶことが互いのシナジーを産むと考えております。そのため弊社が取引可能な企業様を失礼ながら事前にご確認下さいませ。特に右側に位置する企業様は弊社ではなく別の企業様とお取引された方が結果を出せる場合が御座います。
-  .row
-    .col-sm-6
-       p
-         strong
-           | ◎
-         |  中小企業へのアポイントを希望される企業様
-         br
-         b.h4
-         strong
-           | ◎
-         |  ターゲットやニーズが明確で得意な企業を把握している
-         br
-         b.h4
-         strong
-           | ◎
-         |  アポイントに理解があり、双方で売上アップに向けて取り組める
-         br
-         b.h4
-         strong
-           | ◎
-         |  アポ匠のマーケティング分析を活用頂ける企業様
-         br
-         b.h4
-         strong
-           | ◎
-         |  BtoBのコール依頼
-         b.h4
-    .col-sm-6
-       p
-         strong
-           | ×
-         |  従業員数300名以上や資本金億単位の企業様向けのアポ
-         br
-         b.h4
-         strong
-           | ×
-         |  ターゲットやニーズが不明確な商材
-         br
-         b.h4
-         strong
-           | ×
-         |  アポイントに対して過剰な条件を求める企業様
-         br
-         b.h4
-         strong
-           | ×
-         |  決まったリストやトークスクリプトへ依頼される場合
-         br
-         b.h4
-         strong
-           | ×
-         |  BtoCのコール依頼
-         b.h4
-
-br
-hr.line
-br
-
 /# push font
 h2.push
    span
-     | アポ匠でテレアポ代行をお申し込み頂く
+     | エンジランスをご利用頂く
      br
      | メリットをご紹介！
 
@@ -258,19 +148,19 @@ br
 /# USP Point
 .top-wrapper
   h2.heading
-    |  圧倒的な実績を誇る
+    |  必要な時に
     strong
-      |  マーケティング分析
+      |  必要な時間だけ
   br
   br
   h6.heading
-    | 独自マーケティング理論を唱えるアポ匠は、分析や市場調査に非常に特化しています。このマーケティングとテレフォンアポイントを組み合わせることにより、非常に効果的なアポイント獲得を可能とします。
+    | 繁忙期やプロジェクト時、従業員の急な退職迄様々な場面でフレキシブルに活用頂くことが出来ます。単発から長期迄必要に応じて利用出来るため、業務の安定をもたらします。
   br
   br
   .row
    .col-sm-3
    .col-sm-6
-     = image_tag "usp1.jpg", width:"100%"
+     = image_tag "28-1.jpg", width:"100%"
    .col-sm-3
 
 br
@@ -280,19 +170,19 @@ br
 /# USP Point
 .top-wrapper
   h2.heading
-    |  御社の商材の秘めた力を呼び覚ます
+    |  雇用ではないため
     strong
-      |  ターゲティング選定
+      |  面倒な手続きはゼロ！
   br
   br
   h6.heading
-    | 『テレアポはコールするだけ』ではありません。しっかりした選定の元、御社の商材を欲しがるであろうターゲットを選定することにより、契約に繋がりやすいアポ獲得を狙います。
+    | 雇用契約ではなく、フリーランスとの業務委託契約となります。そのため面倒な手続きは一切不要でお仕事に対して対価をお支払いするだけ。
   br
   br
   .row
    .col-sm-3
    .col-sm-6
-     = image_tag "usp2.jpg", width:"100%"
+     = image_tag "akusyu.jpg", width:"100%"
    .col-sm-3
 
 br
@@ -302,133 +192,36 @@ br
 /# USP Point
 .top-wrapper
   h2.heading
-    |  ITプログラマーが作り出す
+    | 事前に把握出来る
     strong
-      |  超厳選リスト
+      |  スキルシート
   br
   br
   h6.heading
-    | 通常のアポリストはリスト会社から購入するのが一般的。しかし弊社では、ITプログラマーが一つ一つのサイトからリストを抽出し、更に貴社の見込みになるであろうリストを徹底的に厳選した見込みリストを作り出します。これにより大幅なアポ率アップを叶えます。
+    | フリーランスとは言ってもスキル面で活用できるか不透明。エンジランスはフリーランスの方から仲介目線で保有スキル項目を抽出した上でご紹介を行います。
   br
   br
   .row
    .col-sm-3
    .col-sm-6
-     = image_tag "usp3.jpg", width:"100%"
+     = image_tag "25-1.jpg", width:"100%"
    .col-sm-3
 
 br
 hr.line
 br
 
-/# USP Point
-.top-wrapper
-  h2.heading
-    |  押す営業スタイルを取り入れない
-    strong
-      |  心理学トーク
-  br
-  br
-  h6.heading
-    | アポ匠にお問い合わせ頂くお客様の他社からの乗り換えで一番多いのがアポ品質の改善を求めて。弊社では押し営業で獲得せず、心理学を取り入れた『相手から会いたいと思わせるトーク』を活用するため、『話だけ』のアポは非常に少ない傾向にあります。
-  br
-  br
-  .row
-   .col-sm-3
-   .col-sm-6
-     = image_tag "usp5.jpg", width:"100%"
-   .col-sm-3
-
-
-br
-hr.line
-br
-
-.top-wrapper
-  h2.heading
-    |  修正力が高い
-    strong
-      |  IT&体感分析
-  br
-  br
-  h6.heading
-    | アポ匠はプログラムに特化していますが、それだけに頼ることは致しません。経験豊富なアポインター集団がデータ分析と共に体感を修正要素に取り入れることで、高い修正能力を誇ります。
-  br
-  br
-  .row
-   .col-sm-3
-   .col-sm-6
-     = image_tag "usp6.jpg", width:"100%"
-   .col-sm-3
-
-br
-hr.line
-br
-
-.top-wrapper
-  h2.heading
-    |  テレアポだけでない
-    strong
-      |  メールマーケティングの達人
-  br
-  br
-  h6.heading
-    | アポ匠はテレアポ会社ではないので、電話以外の手段でもアポイントを獲得致します。反応率5%を叩き出すことも珍しくない洗礼されたコピーライティングでアポ件数を更に引き上げます。
-  br
-  br
-  .row
-   .col-sm-3
-   .col-sm-6
-     = image_tag "usp7.jpg", width:"100%"
-   .col-sm-3
-
-
-br
-hr.line
-br
-
-.top-wrapper
-  h2.heading
-    |  その上ではっきり
-    strong
-      | お断りさせて頂くことも
-  br
-  br
-  h6.heading
-    |  マーケティング分析を行なっても、『テレフォンアポイントに不向き』『ターゲティングできない』『リスト抽出できない』場合、弊社に期待を頂いても結果を出せません。他社様の方が効果を出せる案件もあるため、その場合は出来ない理由をお伝えの上、お断りさせて頂くことも御座います。
-  br
-  br
-  .row
-   .col-sm-3
-   .col-sm-6
-     = image_tag "usp8.jpg", width:"100%"
-   .col-sm-3
-
-br
-hr.line
-br
-
-
-/# inquiry image
-.row
-  .col-sm-12.center
-    =link_to "/contact", :target=>["_blank"]   do
-      =image_tag 'question.gif', width: '70%', class: 'center'
-
-br
-hr.line
-br
 
 /# price information
 .top-wrapper
   h2.heading
     strong
-      | アポ匠のテレアポ代行の料金
+      | HAND`Sの料金相場
     | のご案内
   br
   br
   h6.heading
-    | アポ匠のテレアポ代行をお申し込み頂くにあたり当社に頂く費用をご案内しております。初期費用や月額費用は基本的に頂かない、分かりやすい料金体系となっております。
+    |
 
 table.company.center
   col[width="20%"]
@@ -443,131 +236,50 @@ table.company.center
       th.arrow_box
         | 初期費用
       td
+        del
+           | 98,000円
         span.price
            |  0円
       th.arrow_box
         | 月額費用
-      td.price
-        span
-           | 0円
-    tr
-      th.arrow_box
-        | 契約期間
-      td.price
-        span
-           | 1ヶ月〜
-      th.arrow_box
-        | 受付件数
-      td.price
-        span
-           | 5件〜
-    tr
-      th.arrow_box
-        | スクリプト構築費
       td
+        del
+           | 9,800円
         span.price
-           | 0円~39,800円
-      th.arrow_box
-        | リスト構築費
-      td.price
-        span
-           | 0円〜実費
+           |  0円
     tr
       th.arrow_box
-        | アポ単価
-      td.price colspan="3"
+        | HTMLコーダー
+      td.price
         span
-           | 商材により平均1.2~2.5万円（詳しくはお問い合わせ）
+           | 時給3,500円〜
+      th.arrow_box
+        | ITエンジニア
+      td.price
+        span
+           | 時給5,000円〜
+    tr
+      th.arrow_box
+        | システム手数料
+      td
+        del
+           | 25%
+        span.price
+           |  期間限定10%
+      th.arrow_box
+        | 企画依頼
+      td.price
+        span
+           | 応相談
 
 .center
   small
-    | ※1 基本的な費用を明記しております。テレアポ代行費用は難易度により費用は異なります。
-    | ※2 ご依頼頂く件数等により金額は変動する場合があります。
-
-br
-
-/# inquiry image
-.row
-  .col-sm-12.center
-    =link_to "/contact", :target=>["_blank"]   do
-      =image_tag 'question.gif', width: '50%', class: 'center'
+    | ※1 基本的な費用を明記しております。スキルやプログラム言語により金額は異なります。
+    br
+    | ※2 日給や月給、必要に応じた単発と希望に合わせてご紹介を行います。
 
 br
 hr.line
-br
-
-/# Flow
-.top-wrapper
-  h2.heading
-    strong
-      |  アポ匠と他社
-    | との料金比較
-  br
-  br
-  h6.heading
-    | アポ匠と他社様とテレアポ代行比較して条件の違いをご案内させて頂きます。（弊社調査基準）
-
-table.company.center
-  col[width="25%"]
-  col[width="25%"]
-  col[width="25%"]
-  col[width="25%"]
-  tbody
-    tr
-      th.arrow_box
-        | 同一商材・同一条件
-      th.arrow_box
-        | A社
-      th.arrow_box
-        | B社
-      th.arrow_box
-        | 弊社
-
-    tr
-      th.arrow_box
-        | 初期費用
-      td.arrow_box
-       span
-           | 100,000円~
-      td.arrow_box
-       span
-           | 0円
-      td.price
-        span
-           | 0円〜
-    tr
-      th.arrow_box
-        | 月額費用
-      td.arrow_box
-           | 0円
-      td.arrow_box
-        | 0円
-      td.price
-        span
-           | 0円~
-    tr
-      th.arrow_box
-        | 最低件数
-      td.arrow_box
-           | 20件~
-      td.arrow_box
-        | 30件〜
-      td.price
-        span
-           | 5件〜
-        small
-           |(※期間限定)
-    tr
-      th.arrow_box
-        | アポ単価（成果報酬）
-      td.arrow_box
-           | 30,000円
-      td.arrow_box
-        | 30,000円
-      td.price
-        span
-         | 22,000円
-
 br
 
 /# inquiry image
@@ -584,31 +296,31 @@ br
 .top-wrapper
   h2.heading
     strong
-      | アポ匠のお申し込み
+      | お申し込み
     | の流れ
   br
   br
   h6.heading
-    | お申し込みを頂く場合の流れをご案内しております。基本的には４STEPで完了する形となり、継続的にご依頼頂く場合については基本的に行なって頂く業務はありません。（ご不明点は03-6712-7024迄）
+    | お申込みからご紹介迄の流れをご紹介致します。既に人材が埋まっている場合、ご紹介が出来ない場合もございますので、お早目にご相談頂くことをおすすめ致します。
 
 .row
  .col-md-6
    .kokuban-t3
-    span.title-t3> ❶お申し込み後にヒアリング審査（約１週間以内）
-    | お申し込み後、アポ匠担当者よりご連絡させて頂き、当社より代行のヒアリングを行います。アポ匠にて価格を検討し、テレアポ一件獲得あたりの単価や進め方についての相談を行わせて頂きます。
+    span.title-t3> ❶お申込みフォームより送信
+    | 人材の必要な時期やスキル等、ヒアリング項目、連絡手段を埋めてお申込みフォームを送信してください。
  .col-md-6
    .kokuban-t3
-    span.title-t3> ❷トークスクリプトやリストの作成
-    | ヒアリングの情報を元に市場調査を行なった後、実際に弊社でトークスクリプトの作成を行います。リストについてもご依頼頂く場合、リスト選定についてもこの段階で行います。
+    span.title-t3> ❷弊社で人材にコンタクト（１〜３営業日）
+    | 必要な人材が居るかどうかを弊社にて確認し、必要なフリーランスが適合したら御社にスキルシートのご紹介を致します。
 .row
  .col-md-6
    .kokuban-t3
-    span.title-t3> ❸テレアポ獲得予測件数に基づき費用のご入金（初回のお客様のみ）
-    | 初回のお客様についてはテレアポ費用の先払いをお願いしております。ご入金が弊社に確認出来た時点で、弊社スタッフの方で順次対象リストに対して電話を開始致します。
+    span.title-t3> ❸WEB面談を行い業務日程を調整
+    | インターネット画面を通じて面談を行い、採用の有無を決定します。（企業様のご要望があれば無しでも可能です。）
  .col-md-6
    .kokuban-t3
-    span.title-t3> ❹実際にテレアポコールの開始
-    | アポ匠より実際に企業様へのテレアポコールを行います。コールを行う中でトークスクリプトやリストの修正が必要な場合、修正をしながら最大限の成約を確保出来るトークを構築します。
+    span.title-t3> ❹業務を開始し、毎月月末に請求書発行
+    | 業務を実際に開始していきます。やりとりについては指定のチャットを活用し、毎月月末に請求書を発行します。
 
 
 br
@@ -619,8 +331,8 @@ br
 /# push font
 h2.push
    span
-     | 大変申し訳ありません。現在好評により
+     | ご好評のより人材が埋まりやすくなっております。
      br
-     | 毎月３社様限定でのお申込みとさせて頂いております。
+     | お早めにお問い合わせください。
 
 br

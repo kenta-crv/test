@@ -3,29 +3,9 @@ html
   head
       = render template: 'layouts/_head.html.slim'
   header
-      .row
-        .col-xs-4
-            =image_tag "logo2.png", height: "90vw", class:"left"
-        .col-xs-4
-        .col-xs-4
-            =image_tag "tel.gif", height: "90vw", class:"right"
-
       .row.header
         .col-xs-12
-          ul#dropmenu
-           li
-             = link_to  'トップ', '/' , class: "col-md"
-           li
-             = link_to  '事業内容', '/app/business' , :class=>"col-md"
-           li
-             = link_to  '代理店募集', '/app/agent' , :class=>"col-md"
-           li
-             = link_to  '採用募集', '/app/recruit' , :class=>"col-md"
-           li
-             = link_to  '会社概要', '/app/company' , :class=>"col-md"
-           li
-            = link_to  '問い合わせ', '/contact' , :class=>"col-md"
-
+            p　 HTML/CSSコーダー・ITエンジニアのフリーランスと企業様をマッチング！
   body
     p.notice
       = notice

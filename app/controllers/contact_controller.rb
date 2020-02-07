@@ -27,8 +27,11 @@ class ContactController < ApplicationController
     :tel, #電話番号
     :address, #住所
     :email, #メールアドレス
-    :subject,
-    :message
+    :project , #企画タイトル
+    :skill, #必要スキル
+    :start, #開始時期
+    :period, #必要期間
+    :remarks #プロジェクト詳細
     )
   end
 end
