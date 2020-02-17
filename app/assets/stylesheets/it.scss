@@ -1,3 +1,81 @@
 // Place all the styles related to the it controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/*  メイン画像  */
+.back-image-it {
+background-image: url('baset.png');
+background-size: 100%;
+background-repeat: no-repeat;
+vertical-align: middle;
+padding-bottom:50px;
+margin-top:-22px;
+margin-right:-15px;
+}
+.back-image {
+  text-align:center;
+    .box2 {
+     padding: 1vw 4.5vw 0.3vw;
+     display:inline-block;
+     background:red;
+           p {
+           color: #FFF;/*文字色*/
+           font-weight: bold;
+           font-size:2.0vw;
+             }
+      }
+      .face-1 {
+          font-size:3.5vw;
+          font-weight:bold;
+          margin-top:30px;
+          color:#327BEE;
+          text-shadow: 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff, 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff;
+      }
+      .face-2 {
+          font-size:3.6vw;
+          font-weight:bold;
+      }
+      .face-3 {
+          font-size:8.0vw;
+          font-weight:bold;
+          color: #004D7F;
+          text-shadow: 3px 3px 3px #fff, -3px 3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff, 3px 3px 3px #fff, -3px 3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff;
+      }
+      .face-4 {
+          font-size:2.0vw;
+          font-weight:bold;
+          text-shadow: 1px 1px 1px #fff, -1px 1px 1px #fff, 1px -1px 1px #fff, -1px -1px 1px #fff, 1px 1px 1px #fff, -1px 1px 1px #fff, 1px -1px 1px #fff, -1px -1px 1px #fff;
+          line-height:4.0vw;
+      }
+      .face-price {
+          font-size:5.0vw;
+          font-weight:bold;
+          color:orange;
+          margin:-10px 0 -25px;
+          padding-left:50px;
+          margin-top:20px;
+          text-shadow: 1px 1px 1px #fff, -1px 1px 1px #fff, 1px -1px 1px #fff, -1px -1px 1px #fff, 1px 1px 1px #fff, -1px 1px 1px #fff, 1px -1px 1px #fff, -1px -1px 1px #fff;
+          margin-bottom:0px;
+      }
+      .face-conversion {
+          font-size:3.0vw;
+          font-weight:bold;
+          color:red;
+      }
+ }
+.information {
+  margin-top:45px;
+}
+
+    .box1 {
+     padding: 1rem 4.5rem 0.3rem;
+     display:inline-block;
+     text-align:center;
+     background: red;
+           p {
+           color: #FFF;/*文字色*/
+           font-weight: bold;
+           font-size:2.0vw;
+             }
+      }

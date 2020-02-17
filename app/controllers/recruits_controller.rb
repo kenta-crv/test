@@ -22,13 +22,17 @@ class RecruitsController < ApplicationController
   private
   def recruit_params
     params.require(:recruit).permit(
-      :name,
-      :mobile,
-      :email,
-      :age,
-      :station,
-      :choice,
-      :remarks
+                    :company, #会社名
+                    :name, #名前
+                    :tel, #電話番号
+                    :email, #メールアドレス
+                    :address, #住所
+                    :business, #事業内容
+                    :start, #開始予定時期
+                    :period, #契約予定期間
+                    :period_select, #契約予定期間
+                    :option_select, #オプション希望
+                    :remarks #備考
     )
   end
 end

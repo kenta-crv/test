@@ -1,12 +1,14 @@
 株式会社RiPlusの求人応募がありました。
 
 --------------------------
+会社名: <%= @recruit.company %>
 氏名: <%= @recruit.name %>
-連絡先: <%= @recruit.mobile %>
+連絡先: <%= @recruit.tel %>
 メールアドレス: <%= @recruit.email %>
-年齢: <%= @recruit.age %>
-最寄駅: <%= @recruit.station %>
-最寄駅: <%= @recruit.choice %>
-備考:
-	<%= @recruit.remarks %>
+住所: <%= @recruit.address %>
+事業内容: <%= @recruit.business %>
+開始予定時期: <%= @recruit.start %>
+契約予定: <%= @recruit.period %><%= @recruit.period_select %>
+備考:<%= @recruit.option_select %>
+備考:<%= @recruit.remarks %>
 --------------------------

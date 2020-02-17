@@ -10,12 +10,14 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
  *= require_self
  */
 
- $main_color: #004D7F;
- $sub_color: #1481c8;
+@import "app.scss";
+@import "it.scss";
+
+$main_color: #004D7F;
+$sub_color: #1481c8;
 
 body {
   width:100%;
@@ -23,21 +25,17 @@ body {
   text-align:center;
 }
 
-
-                                /*ヘッダーのベース設定*/
+                      /*ヘッダーのベース設定*/
 header {
   width: 100%;
-  background-color:white;
   position: fixed;
   z-index:10;
-  list-style-type: none;
   height: 40px;
   margin-top:-10px;
-  line-height:middle;
   background: $main_color;
   p {
-    line-height:middle;
-    padding:10px;
+    padding-top:10px;
+    font-size:1.0vw;
     color: white;
     font-weight:bold;
   }
@@ -47,85 +45,6 @@ main {
   margin-top:-20px;
 }
 
-
-
-
-                                  /*  メイン画像  */
-.back-image-app {
-  background-image: url('baset.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  vertical-align: middle;
-  padding-bottom:50px;
-  margin-top:-22px;
-  margin-right:-15px;
-}
-.back-image {
-  text-align:center;
-    .box2 {
-     padding: 1vw 4.5vw 0.3vw;
-     display:inline-block;
-     background:red;
-           p {
-           color: #FFF;/*文字色*/
-           font-weight: bold;
-           font-size:2.0vw;
-             }
-      }
-      .face-1 {
-          font-size:3.5vw;
-          font-weight:bold;
-          margin-top:30px;
-          color:#327BEE;
-          text-shadow: 3px 3px 3px #fff, -3px 3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff, 3px 3px 3px #fff, -3px 3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff;
-      }
-      .face-2 {
-          font-size:3.6vw;
-          font-weight:bold;
-      }
-      .face-3 {
-          font-size:8.0vw;
-          font-weight:bold;
-          color: $main_color;
-          text-shadow: 3px 3px 3px #fff, -3px 3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff, 3px 3px 3px #fff, -3px 3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff;
-      }
-      .face-4 {
-          font-size:2.0vw;
-          font-weight:bold;
-          text-shadow: 1px 1px 1px #fff, -1px 1px 1px #fff, 1px -1px 1px #fff, -1px -1px 1px #fff, 1px 1px 1px #fff, -1px 1px 1px #fff, 1px -1px 1px #fff, -1px -1px 1px #fff;
-          line-height:4.0vw;
-      }
-      .face-price {
-          font-size:5.0vw;
-          font-weight:bold;
-          color:orange;
-          margin:-10px 0 -25px;
-          padding-left:50px;
-          margin-top:20px;
-          text-shadow: 1px 1px 1px #fff, -1px 1px 1px #fff, 1px -1px 1px #fff, -1px -1px 1px #fff, 1px 1px 1px #fff, -1px 1px 1px #fff, 1px -1px 1px #fff, -1px -1px 1px #fff;
-          margin-bottom:0px;
-      }
-      .face-conversion {
-          font-size:3.0vw;
-          font-weight:bold;
-          color:red;
-      }
- }
-.information {
-  margin-top:45px;
-}
-
-    .box1 {
-     padding: 1rem 4.5rem 0.3rem;
-     display:inline-block;
-     text-align:center;
-     background: red;
-           p {
-           color: #FFF;/*文字色*/
-           font-weight: bold;
-           font-size:2.0vw;
-             }
-      }
 
 /*中央寄せ*/
 .center {
@@ -148,7 +67,6 @@ main {
      background: linear-gradient(transparent 60%, #FFFF66 60%);
 }
 
-                                            /*テーブルに関する情報*/
 /*テーブル共通*/
 table.company {
    width: 90%;
@@ -166,8 +84,8 @@ table.company {
       overflow: visible;
       position: relative;
       color: #fff;
-      font-weight: normal;
-      font-size: 1.7vw;
+      font-weight: bold;
+      font-size: 2.0vw;
 
       :after {
          left: 100%;
@@ -209,13 +127,19 @@ table.company {
        margin-top: -10px;
        }
 }
-  input {
-    width:90%;
-  }
-  textarea {
-    width:90%;
-    line-height: 1.5em;
-  }
+input {
+  width:90%;
+  border-radius:3px;
+  box-shadow: none;
+  padding: 2px 8px;
+}
+textarea {
+  width:90%;
+  line-height: 1.5em;
+  border-radius:3px;
+  box-shadow: none;
+  padding: 2px 8px;
+}
 
 
 .price {
@@ -225,7 +149,7 @@ table.company {
  }
 
 
-                                               /*  Top Wrapper  */
+/*  Top Wrapper  */
 .top-wrapper {
   padding-bottom: 70px;
   position:relative;
@@ -235,11 +159,11 @@ table.company {
            color: #666;
             }
         h2 {
-            font-size:3vw;
+            font-size:3rem;
             font-weight:bold;
             }
         p {
-            font-size:2vw;
+            font-size:2rem;
             }
         strong {
             color: $main_color;
@@ -249,8 +173,8 @@ table.company {
         }
         h6 {
             line-height:2.0em;
-            font-size:1.5vw;
-            margin:0 70px;
+            font-size:1.5rem;
+            margin:0 25px;
         }
 }
 
@@ -507,4 +431,34 @@ background-color:$sub_color;
 .font-height-2 {
   font-size:0.5vw;
   margin:0 30px;
+}
+
+
+
+
+.red {
+  color: red;
+}
+
+.font-height {
+  line-height:3.0vw;
+  margin:0 30px;
+}
+
+.font-height-2 {
+  font-size:0.5vw;
+  margin:0 30px;
+}
+
+
+.label {
+  background: red;
+}
+
+.label-blue {
+  background: blue;
+}
+
+.center{
+  text-align:center;
 }

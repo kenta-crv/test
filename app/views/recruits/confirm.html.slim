@@ -9,58 +9,91 @@ br
       | フォーム
     table.company
       colgroup
-        col width="40%" /
-        col width="60%" /
+        col width="10%" /
+        col width="20%" /
+        col width="70%" /
       tr
-        th.arrow_box
-          | 氏名
-          strong.label.label-blue 必須
-          br/
+        td
+          strong.label 必須
+        td.arrow_box
+          | 会社名
+        td
+          = f.hidden_field :company
+          = @recruit.company
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | 担当者名
         td
           = f.hidden_field :name
           = @recruit.name
       tr
-        th.arrow_box
-          | 電話番号
-          strong.label.label-blue 必須
         td
-          = f.hidden_field :mobile
-          = @recruit.mobile
+          strong.label 必須
+        td.arrow_box
+          | 電話番号
+        td
+          = f.hidden_field :tel
+          = @recruit.tel
       tr
-        th.arrow_box
+        td
+          strong.label 必須
+        td.arrow_box
           | メールアドレス
-          strong.label.label-blue 必須
         td
           = f.hidden_field :email
           = @recruit.email
       tr
-        th.arrow_box
-          | 年齢
-          strong.label.label-blue 必須
         td
-          = f.hidden_field :age
-          = @recruit.age
-      tr
-        th.arrow_box
-          | 最寄駅
-          strong.label.label-blue 必須
+          strong.label 必須
+        td.arrow_box
+          | 住所
         td
-          = f.hidden_field :station
-          = @recruit.station
+          = f.hidden_field :address
+          = @recruit.address
       tr
-        th.arrow_box
-          | 形態
-          strong.label.label-blue 必須
         td
-          = f.hidden_field :choice
-          = @recruit.choice
+          strong.label.label-blue 任意
+        td.arrow_box
+          | 事業内容
+        td
+          = f.hidden_field :business
+          = @recruit.business
       tr
-        th.arrow_box
-          | 本文
-          strong.label.label-blue
+        td
+          strong.label 必須
+        td.arrow_box
+          | 開始予定時期
+        td
+          = f.hidden_field :start
+          = @recruit.start
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | 契約予定期間
+        td
+          = f.hidden_field :period
+          = @recruit.period
+          = f.hidden_field :period_select
+          = @recruit.period_select
+      tr
+        td
+          strong.label.label-blue 任意
+        td.arrow_box
+          | 希望オプション
+        td
+          = f.hidden_field :option_select
+          = @recruit.option_select
+      tr
+        td
+          strong.label.label-blue 任意
+        td.arrow_box
+          | その他備考
         td
           = f.hidden_field :remarks
           = @recruit.remarks
       tr
-        td colspan="2"
+        td colspan="3"
           = f.submit "確認"

@@ -1,5 +1,5 @@
 class ContactController < ApplicationController
-  layout "app"
+  layout "it"
   def index
     @contact = Contact.new
     render :action => 'index'
@@ -12,6 +12,7 @@ class ContactController < ApplicationController
     else
       render :action => 'index'
     end
+    #binding.pry
   end
 
   def thanks
@@ -22,16 +23,18 @@ class ContactController < ApplicationController
   private
   def contact_params
     params.require(:contact).permit(
-    :company, #会社名
-    :name,  #代表者名
-    :tel, #電話番号
-    :address, #住所
-    :email, #メールアドレス
-    :project , #企画タイトル
-    :skill, #必要スキル
-    :start, #開始時期
-    :period, #必要期間
-    :remarks #プロジェクト詳細
+                    :company, #会社名
+                    :name, #名前
+                    :tel, #電話番号
+                    :email, #メールアドレス
+                    :address, #住所
+                    :project, #プロジェクト名
+                    :skill, #必要スキル選択
+                    :skill_other, #必要スキルその他
+                    :start, #開始予定時期
+                    :period, #契約予定期間
+                    :period_select, #
+                    :remarks #備考
     )
   end
 end

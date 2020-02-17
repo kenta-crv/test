@@ -4,7 +4,7 @@ class RecruitMailer < ActionMailer::Base
 
   def received_email(recruit)
     @recruit = recruit
-    mail(subject: '求人応募が届きました') do |format|
+    mail(subject: 'アポエージェンシーより申込みが届きました') do |format|
       format.text
     end
   end

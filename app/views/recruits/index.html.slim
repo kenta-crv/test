@@ -9,55 +9,93 @@
 
   .tops-wrapper
     h1.headline-first
-      span> 求人応募
+      span> お問い合わせ
       | フォーム
     br
     table.company
       colgroup
-        col width="40%"
-        col width="60%"
+        col width="10%"
+        col width="20%"
+        col width="70%"
       tr
-        th.arrow_box
-          | 氏名
-          strong.label.label-blue 必須
-        td.short
-         = f.text_field :name
-
+        td
+          strong.label 必須
+        td.arrow_box
+          | 会社名
+        td
+          = f.text_field :company
       tr
-        th.arrow_box
+        td
+          strong.label 必須
+        td.arrow_box
+          | 担当者名
+        td
+          = f.text_field :name
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
           | 電話番号
-          strong.label.label-blue 必須
-        td= f.text_field :mobile
+        td
+          = f.text_field :tel
       tr
-        th.arrow_box
+        td
+          strong.label 必須
+        td.arrow_box
           | メールアドレス
-          strong.label.label-blue 必須
-        td= f.email_field :email
+        td
+          = f.email_field :email
       tr
-        th.arrow_box
-          | 年齢
-          strong.label.label-blue 必須
-        td= f.text_field :age
+        td
+          strong.label 必須
+        td.arrow_box
+          | 住所
+        td
+          = f.text_field :address
       tr
-        th.arrow_box
-          | 最寄駅
-          strong.label.label-blue 必須
-        td= f.text_field :station
-          | 駅
+        td
+          strong.label.label-blue 任意
+        td.arrow_box
+          | 事業内容
+        td
+          = f.text_field :business
       tr
-        th.arrow_box
-          | 形態
-          strong.label.label-blue 必須
-        td= f.select(:choice, [ \
-            ["選択する","選択する"],      \
-            ["正社員","正社員"],      \
-            ["アルバイト","アルバイト"],      \
-            ])
+        td
+          strong.label 必須
+        td.arrow_box
+          | 開始予定時期
+        td
+          = f.date_field :start
       tr
-        th.arrow_box
-          | 本文
-          strong.label.label-blue
-        td= f.text_area :remarks
+        td
+          strong.label 必須
+        td.arrow_box
+          | 契約予定期間
+        td
+          = f.number_field :period
+          br
+          br
+          = f.select(:period_select, [ \
+          ["選択してください","選択してください"],
+          ["時間","時間"],
+          ["日","日"],
+          ["ヶ月","ヶ月"],
+          ["未定","未定"],
+          ])
       tr
-        td colspan="2"
+        td
+          strong.label.label-blue 任意
+        td.arrow_box
+          | 希望オプション
+        td
+          = f.collection_check_boxes :option_select, Recruit.OptionLists, :first, :second
+      tr
+        td
+          strong.label.label-blue 任意
+        td.arrow_box
+          | その他備考
+        td
+          = f.text_area :remarks
+      tr
+        td colspan="3"
           = f.submit "確認"
