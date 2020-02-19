@@ -67,7 +67,7 @@ br
           | 必要スキル
         td
           = f.hidden_field :skill
-          = @contact.skill
+          = @contact.skill.inspect
       tr
         td
           strong.label.label-blue 任意

@@ -84,8 +84,8 @@ br
         td.arrow_box
           | 希望オプション
         td
-          = f.hidden_field :option_select
-          = @recruit.option_select
+          = f.hidden_field :option
+          = @recruit.option.inspect
       tr
         td
           strong.label.label-blue 任意

@@ -9,8 +9,8 @@ class Recruit
                 :start, #開始予定時期
                 :period, #契約予定期間
                 :period_select, #契約予定期間
-                :option_select, #オプション希望
-                :remarks #備考
+                :remarks, #備考
+                :option
 
   validates :company, {presence: true}
   validates :name, {presence: true}

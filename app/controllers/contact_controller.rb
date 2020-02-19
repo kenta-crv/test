@@ -7,6 +7,7 @@ class ContactController < ApplicationController
 
   def confirm
     @contact = Contact.new(contact_params)
+    @contact.skill = params[:contact][:skill]
     if @contact.valid?
       render :action =>  'confirm'
     else
@@ -17,7 +18,8 @@ class ContactController < ApplicationController
 
   def thanks
     @contact = Contact.new(contact_params)
-    ContactMailer.received_email(@contact).deliver
+    @contact.skill = params[:contact][:skill]
+    ContactMailer.received_email(@contact, @contact.skill).deliver
   end
 
   private

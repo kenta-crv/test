@@ -7,6 +7,7 @@ class RecruitsController < ApplicationController
 
   def confirm
     @recruit = Recruit.new(recruit_params)
+    @recruit.option = params[:recruit][:option]
     if @recruit.valid?
       render :action =>  'confirm'
     else
@@ -16,7 +17,8 @@ class RecruitsController < ApplicationController
 
   def thanks
     @recruit = Recruit.new(recruit_params)
-    RecruitMailer.received_email(@recruit).deliver
+    @recruit.option = params[:recruit][:option]
+    RecruitMailer.received_email(@recruit, @recruit.option).deliver
   end
 
   private
@@ -31,7 +33,7 @@ class RecruitsController < ApplicationController
                     :start, #開始予定時期
                     :period, #契約予定期間
                     :period_select, #契約予定期間
-                    :option_select, #オプション希望
+                    :option, #オプション希望
                     :remarks #備考
     )
   end

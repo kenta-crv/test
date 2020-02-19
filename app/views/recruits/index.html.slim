@@ -87,8 +87,8 @@
           strong.label.label-blue 任意
         td.arrow_box
           | 希望オプション
-        td
-          = f.collection_check_boxes :option_select, Recruit.OptionLists, :first, :second
+        td.center
+          = f.collection_check_boxes :option, Recruit.OptionLists, :first, :first
       tr
         td
           strong.label.label-blue 任意
